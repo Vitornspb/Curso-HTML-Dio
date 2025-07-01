@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Horário de Atendimento - PetLife</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .header {
+            background-color: #4db6ac;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .menu {
+            flex: 1 1 200px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+            min-width: 200px;
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu li {
+            margin-bottom: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #4db6ac;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #00796b;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content h1 {
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #4db6ac;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        .footer {
+            margin: 40px 20px 20px 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            color: #555;
+            font-size: 0.9em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .menu {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="img/logo-white.svg" alt="PetLife"/>
+    </a>
+</div>
+
+<div class="wrapper">
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre a Clínica</a></li>
+            <li><a href="horario.html">Horário de Atendimento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Horário de Atendimento</h1>
+        <p>
+            Na PetLife, cuidamos do seu pet com todo carinho e dedicação. 
+            Nossos serviços incluem consultas, vacinação, banho, tosa e atendimento de emergência. 
+            Veja abaixo os horários de cada serviço conforme o dia da semana:
+        </p>
+
+        <table>
+            <tr>
+                <th>Serviços</th>
+                <th>Segunda a Sexta</th>
+                <th>Sábado</th>
+                <th>Feriados</th>
+            </tr>
+            <tr>
+                <td>Consulta Veterinária</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>08h - 14h</td>
+            </tr>
+            <tr>
+                <td>Vacinação</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>08h - 14h</td>
+            </tr>
+            <tr>
+                <td>Banho</td>
+                <td>08h - 19h</td>
+                <td>08h - 18h</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Tosa</td>
+                <td>08h - 19h</td>
+                <td>08h - 18h</td>
+                <td>-</td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <p>Entre em contato: contato@petlife.com | Telefone: (83) 91234-5678</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

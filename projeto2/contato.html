@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - PetLife</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .header {
+            background-color: #4db6ac;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .menu {
+            flex: 1 1 200px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+            min-width: 200px;
+        }
+
+        .menu img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu li {
+            margin-bottom: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #4db6ac;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #00796b;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content h1 {
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        form button {
+            padding: 12px;
+            background-color: #4db6ac;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #00796b;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .footer {
+            margin: 40px 20px 20px 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            color: #555;
+            font-size: 0.9em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .menu {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="img/logo-white.svg" alt="PetLife"/>
+    </a>
+</div>
+
+<div class="wrapper">
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre a Clínica</a></li>
+            <li><a href="horario.html">Horário de Atendimento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <img src="img/faq-img.svg" alt="Imagem duas pessoas">
+    </div>
+
+    <div class="content">
+        <h1>Entre em Contato</h1>
+        <p><strong>Telefones:</strong> (83) 3245-1234 | <strong>WhatsApp:</strong> (83) 91234-5678</p>
+        <p><strong>Endereço:</strong> Avenida Epitácio Pessoa, 123, Bairro Cabo Branco, João Pessoa - PB, CEP 58040-000</p>
+
+        <!-- Google Maps Iframe -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0530426887926!2d-34.87207342580861!3d-7.119851792883834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace7fc44303677%3A0x81e0494801fb96f!2sAv.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%20123%20-%20Cabo%20Branco%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058040-000!5e0!3m2!1spt-PT!2sbr!4v1744067798671!5m2!1spt-PT!2sbr" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Formulário de Contato -->
+        <form action="processar_formulario.php" method="post">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="assunto" placeholder="Assunto" required>
+            <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+            <div class="form-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>Entre em contato: contato@petlife.com | Telefone: (83) 91234-5678</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

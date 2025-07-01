@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre a Clínica - PetLife</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .header {
+            background-color: #4db6ac;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .menu {
+            flex: 1 1 200px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+            min-width: 200px;
+        }
+
+        .menu img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu li {
+            margin-bottom: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #4db6ac;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #00796b;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content h1 {
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin: 40px 20px 20px 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            color: #555;
+            font-size: 0.9em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .menu {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html">
+        <img src="img/logo-white.svg" alt="PetLife"/>
+    </a>
+</div>
+
+<div class="wrapper">
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobre.html">Sobre a Clínica</a></li>
+            <li><a href="horario.html">Horário de Atendimento</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <img src="img/start-img.svg" alt="foto cachorro">
+    </div>
+
+    <div class="content">
+        <h1>Sobre a Clínica PetLife</h1>
+        <p>
+            A <strong>PetLife</strong> é uma clínica veterinária moderna e acolhedora, criada com o propósito de oferecer um cuidado completo e humanizado para os animais de estimação. Nossa equipe é formada por profissionais apaixonados por pets, altamente qualificados e comprometidos com o bem-estar dos seus companheiros de quatro patas.
+        </p>
+
+        <p>
+            Localizada em um ponto de fácil acesso, nossa estrutura conta com consultórios equipados, centro cirúrgico, sala de exames, banho e tosa, além de ambientes projetados para proporcionar conforto e segurança tanto aos animais quanto aos seus tutores.
+        </p>
+
+        <p>
+            Aqui na PetLife, acreditamos que cada pet é único. Por isso, oferecemos um atendimento personalizado, sempre com carinho, paciência e responsabilidade. Seja para uma simples consulta, uma vacinação, um procedimento cirúrgico ou até um banho relaxante, você pode contar conosco para cuidar da saúde e felicidade do seu melhor amigo.
+        </p>
+
+        <p>
+            Nossa missão é transformar a ida ao veterinário em uma experiência positiva e tranquila para todos. Cuidar do seu pet é mais do que um trabalho — é a nossa paixão!
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Entre em contato: contato@petlife.com | Telefone: (83) 91234-5678</p>
+</div>
+
+</body>
+</html>
